@@ -15,10 +15,10 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
-                <img src="{% static 'goCart/images/brand-logo.png'%}" width="50" height="50" alt="">
+                <img src="{% static 'goCart/images/brand-logo.png'%}" width="80" height="80" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -46,30 +46,38 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">About Us</a>
+                        <a class="nav-link text-black " href="#">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Contact Us</a>
+                        <a class="nav-link text-black " href="#">Contact Us</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
-
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page"> <img src="{% static 'goCart/images/user-logo.png' %}"
+                            width="50" height="50" alt="">Login</a>
+                </li>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Profile_name_here
+                            <img src="{% static 'goCart/images/user-logo.png' %}" width="50" height="50" alt="">
                         </a>
                         <ul class="dropdown-menu">
+                            <li><strong>Profile_name_here</strong></li>
                             <li><a class="dropdown-item" href="#">Profile</a></li>
                             <li><a class="dropdown-item" href="#">Orders</a></li>
                             <li><a class="dropdown-item" href="#">Change Password</a></li>
                             <li><a class="dropdown-item" href="#">Logout</a></li>
                         </ul>
 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="{% url 'goCart:home'%}"><img
+                                src="{% static 'goCart/images/cart-logo.png'%}" width="50" height="50" alt=""></a>
                     </li>
                 </ul>
             </div>
@@ -78,7 +86,7 @@
 
     {% block main-content %}{% endblock main-content %}
 
-    <footer>
+    <footer class="container-fluid bg-light text-center p-2 mt-5 fixed-bottom">
         Copyright : 2026 || Developed with ❤️ By : Dipesh
     </footer>
 
