@@ -37,12 +37,12 @@
                             Products
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Women's Clothes</a></li>
-                            <li><a class="dropdown-item" href="#">Men's Clothes</a></li>
-                            <li><a class="dropdown-item" href="#">Childern Clothes</a></li>
-                            <li><a class="dropdown-item" href="#">Kitchen</a></li>
-                            <li><a class="dropdown-item" href="#">Tech</a></li>
-                            <li><a class="dropdown-item" href="#">Fashion</a></li>
+                            <li><a class="dropdown-item" href="{% url 'goCart:category' 'wc'%}">Women's Clothes</a></li>
+                            <li><a class="dropdown-item" href="{% url 'goCart:category' 'mc'%}">Men's Clothes</a></li>
+                            <li><a class="dropdown-item" href="{% url 'goCart:category' 'cc'%}">Childern Clothes</a></li>
+                            <li><a class="dropdown-item" href="{% url 'goCart:category' 'k'%}">Kitchen</a></li>
+                            <li><a class="dropdown-item" href="{% url 'goCart:category' 't'%}">Tech</a></li>
+                            <li><a class="dropdown-item" href="{% url 'goCart:category' 'f'%}">Fashion</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
