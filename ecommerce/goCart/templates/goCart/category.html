@@ -4,5 +4,18 @@
 
 
 {% block main-content %}
-<h1>Category : {{val}}</h1>
+<h1>Category :</h1>
+<div class="container text-center">
+    <div class="row g-2">
+        {% for item in product %}
+        <div class="col-4">
+            <div class="p-3">
+                <img src="{{item.product_image.url}}" alt="product Image">
+            </div>
+
+        </div>
+        {% endfor %}
+    </div>
+</div>
+</div>
 {% endblock main-content %}
