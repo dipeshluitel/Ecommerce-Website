@@ -16,7 +16,11 @@
                     <img src="{{item.product_image.url}}" class="card-img-top">
                     <div class="card-body">
                         <h5>{{ item.title }}</h5>
-                        <p>{{ item.sellingprice}}</p>
+                        <div class="fw-bold">
+                            Rs. {{item.discounted_price}}
+                            <small class="fw-light text-decoration-line-through">{{ item.selling_price}}
+                            </small>
+                        </div>
                     </div>
 
                 </div>
